@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola mundo</title>
+</head>
+
+<body>
+    <button onclick="cargarArchivo()">Hazme click</button>
+    <br><br>
+    <div id="info"></div>
+
+    <script type="text/javascript">
+        function cargarArchivo(){
+            var peticion_http;
+
+            //dependiendo del navegador...
+            if(window.XMLHttpRequest){
+                peticion_http = new XMLHttpRequest();
+            } else{
+                peticion_http = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            //0 no inicializada.
+            //1 establecida.
+            //2 envio.
+            //3 procesada.
+            //4 finalizada.
+            peticion_http.onreadystatechange = function(){
+                if(peticion_http.readyState == 4 && peticion_http.status == 200){
+                    document.getElementById("info").innerHTML = peticion_http.responseText;
+                }
+            }
+
+            //peticion HTTP
+            peticion_http.open('GET', 'hola_mundo.txt', true);
+            peticion_http.send();
+        }
+    </script>
+</body>
+</html>

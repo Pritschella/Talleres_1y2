@@ -1,0 +1,19 @@
+* {
+    margin: 20px;
+    padding: 0px;
+}
+
+#caja {
+    padding: 1.5px;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 45px;
+    text-align: justify;
+}
+
+h5 {
+    cursor: pointer;
+}

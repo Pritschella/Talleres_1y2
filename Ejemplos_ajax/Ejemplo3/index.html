@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor de busqueda</title>
+    <script type="text/javascript" src="autocompletar.js"></script>
+</head>
+
+<body>
+    <h2>Motor de busqueda de oficios</h2>
+    <p><b>Escriba el oficio a buscar</b></p>
+    <form method="POST" action="index.html">
+        <p><input type="text" size="40" id="caja_entrada" onkeyup="showName(this.value)"></p>
+    </form>
+    <p>Resultados: <span id="txt_resultados"></span></p>
+</body>
+</html>

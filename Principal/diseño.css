@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-color: khaki;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: crimson;
+}
+
+.ajax{
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside{
+    flex: 50%;
+    background-color: silver;
+    padding: 55px;
+}
+
+.jquery{
+    flex: 50%;
+    background-color: cornflowerblue;
+    padding: 15px;
+}
+
+h2{
+    text-align: center;
+    font-family: cursive;
+    color: black;
+}
+
+.botonesa{
+    background-color: darkmagenta;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 10px, auto;
+}
+
+.botonesa a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.botonesa:hover{
+    background-color: turquoise;
+    cursor: pointer;
+}
+
+.botonesj{
+    background-color: darksalmon;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 10px, auto;
+    float: right;
+}
+
+.botonesj a{
+    text-decoration: none;
+    color: seagreen;
+    display: block;
+}
+
+.botonesj:hover{
+    background-color: thistle;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 700px){
+    .ajax{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es-mx">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Instancia Remota -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>JQuery_Árbol DOM</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ejemplo: Árbol DOM</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Alumno</th>
+                    <th>Examen 1</th>
+                    <th>Examen 2</th>
+                    <th>Examen 3</th>
+                    <th>Nota Evaluación</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="name">Pepe Pérez</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td class="grade"></td>
+                </tr>
+
+                <tr>
+                    <td class="name">Ana Ramírez</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td class="grade"></td>
+                </tr>
+
+                <tr>
+                    <td class="name">Rosa Torres</td>
+                    <td>8</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td class="grade"></td>
+                </tr>
+
+                <tr>
+                    <td class="name">Sara Gallardo</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td class="grade"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            <button id="find">Seleccinar primer columna - FIND</button>
+            <button id="filter">Seleccionar última columna - FILTER</button>
+        </p>
+
+        <p>
+            <label>Columna de inicio:</label>
+            <input id="start" type="number">
+
+            <label>Columna final:</label>
+            <input id="end" type="number">
+
+            <button id="slice">Buscar por rango</button>
+        </p>
+
+        <p>
+            <button id="reset">Restablecer</button>
+        </p>
+    </div>
+    
+    <!-- Enlace al archivo JavaScript para el uso de JQuery -->
+    <script src="script_jquery.js"></script>
+
+</body>
+
+</html>

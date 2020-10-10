@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller jQuery </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.5.1.js"></script>
+
+
+</head>
+
+<body>
+
+    <!--Calculadora-->
+    <section id="calculadora">
+        <div>
+            <p>
+                <label for="num1">Numero 1</label>
+                <input id="num1" type="number" placeholder="numero1">
+            </p>
+            <p>
+                <label for="num2">NUmero 2</label>
+                <input id="num2" type="number" placeholder="numero2">
+            </p>
+            <button value="+">+</button>
+            <button value="-">-</button>
+            <button value="*">*</button>
+            <button value="/">/</button>
+        </div>
+        <div>
+            <h4>El resultado de la operación es:<span></span></h4>
+        </div>
+    </section>
+
+    <!-- Tabla para buscar nombre -->
+    <section id="table">
+        <p>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" placeholder="nombre_a_buscar">
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Alumno</th>
+                    <th>Examen 1</th>
+                    <th>Examen 2</th>
+                    <th>Examen 3</th>
+                    <th>Nota evaluación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pepe Pérez</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Ana Ramírez</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Rosa Torres</td>
+                    <td>9</td>
+                    <td>3</td>
+                    <td>9</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sara Gallardo</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Cuadrado que se mueve-->
+    <section id="square">
+        <div id="hijo">
+
+        </div>
+    </section>
+
+    <!-- Cuerpo del script en el que trabajaremos -->
+    <script src="js/eventos.js"></script>
+</body>
+
+</html>
